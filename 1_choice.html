@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(105, 207, 241);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: rgb(181, 235, 253);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px; /* Max width of the form */
+        }
+
+        h1 {
+            color: #000;
+            font-size: 24px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: calc(100% - 16px); /* Full width minus padding */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>สมัครสมาชิก</h1>
+        <div class="form-group">
+            <form action="receivelogin.php" method="post" target="_blank">
+                <label for="user">เลขประจำตัวประชาชน</label>
+                <input type="text" id="user" name="user" required><br>
+
+                <label for="name">ชื่อ – นามสกุล</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="gender">เพศ</label>
+                <select id="gender" name="gender" required>
+                    <option value="">เลือกเพศ</option>
+                    <option value="male">ชาย</option>
+                    <option value="female">หญิง</option>
+                </select><br>
+
+                <label for="age">อายุ</label>
+                <input type="number" id="age" name="age" required><br>
+
+                <label for="address">ที่อยู่</label>
+                <textarea id="address" name="address" rows="4" required></textarea><br>
+
+                <label for="province">จังหวัด</label>
+                <input type="text" id="province" name="province" required><br>
+
+                <label for="postal">รหัสไปรษณีย์</label>
+                <input type="text" id="postal" name="postal" required><br>
+
+                <label for="phone">เบอร์โทรศัพท์</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="email">อีเมลล์</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="username">รหัสผู้ใช้งาน</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="birthdate">วันเกิด</label>
+                <input type="date" id="birthdate" name="birthdate" required><br>
+            </form>
+            <form action="login.html" method="post" target="_blank">
+                <div class="button-group">
+            <div class="button-group">
+                <button type="submit" class="btn" id="send" name="send" value="สมัครสมาชิก">สมัครสมาชิก</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Images with Spacing</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Center images horizontally */
+            align-items: center; /* Center images vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            background-color: lightblue; /* Background color */
+        }
+
+        .container {
+            display: flex;
+            gap: 40px; /* Space between images, adjust as needed */
+        }
+
+        .container img {
+            width: 300px; /* Adjust as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="1_choice.html">
+            <img src="icon_1.jpg" alt="ผู้สมัครงาน">
+        </a>
+        <a href="2_choice.html">
+            <img src="icon_2.jpg" alt="สถานประกอบการ">
+        </a>
+    </div>
+</body>
+</html>
